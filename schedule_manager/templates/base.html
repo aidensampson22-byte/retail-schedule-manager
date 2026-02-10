@@ -1,0 +1,16 @@
+<!-- This is going to my base template for the entire web page -->
+
+{% block header %}
+<link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<nav class="bg-gray-800 p-4 justify-center items-center">
+    <div class="max-w-2xl mx-auto flex justify-between">
+        <a href="{% url 'home_page' %}" class="text-white text-lg font-semibold">Home Page</a>
+
+
+        <a class="text-white text-lg font-semibold">Employee Section</a>
+        <a class="text-white text-lg font-semibold">Build a Schedule</a>
+        <a class="text-white text-lg font-semibold">View Schedules</a>
+    </div>
+</nav>
+
+{% endblock %}
